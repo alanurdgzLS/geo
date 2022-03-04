@@ -1,0 +1,50 @@
+#slider-home .container-fluid {
+    padding: 0;
+}
+
+#slider-home .row {
+    justify-content: center !important;
+}
+
+#slider-home .row .col-12 {
+    padding: 0;
+}
+
+#meetus-home {
+    color: white;
+}
+
+#meetus-home .row {
+    padding: 25px;
+}
+
+#location-home .row {
+    justify-content: center;
+}
+
+#location-home .card {
+    -webkit-box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+#mapa {
+    width: 600px;
+}
+
+#footer-home {
+    color: white;
+    padding: 25px;
+}
+
+#footer-home .fa-heart {
+    color: red !important;
+}
+
+#footer-home a {
+    color: white;
+}
+
+#footer-home h6 {
+    margin: 0px;
+}
