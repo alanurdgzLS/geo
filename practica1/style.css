@@ -28,8 +28,26 @@
     box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
+#ubication .container-fluid,
+#ubication .row,
+#ubication .col-12 {
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+
+#ubication h3 {
+    margin: 25px;
+}
+
+#ubication .card {
+    width: 550px;
+}
+
 #mapa {
-    width: 600px;
+    width: 750px;
+    height: 435px;
+    margin-bottom: 15px;
 }
 
 #footer-home {

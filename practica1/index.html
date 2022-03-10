@@ -34,7 +34,7 @@
                         <a class="nav-link" href="#location-home">Destinos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ubicación</a>
+                        <a class="nav-link" href="#ubication">Ubicación</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -121,7 +121,7 @@
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                         <a href="https://www.airbnb.mx/rooms/49429390?adults=2&location=Holanda&check_in=2022-03-07&check_out=2022-03-13&federated_search_id=a583f62c-57d3-4bea-9ff3-eba0a6f312b8&source_impression_id=p3_1646095394_mqkZr6BT4%2B9mak7c"
-                            target="blank" class="btn btn-dark">Go somewhere</a>
+                            target="blank" class="btn btn-dark">Visitar</a>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                         <a href="https://www.airbnb.mx/rooms/10067187?adults=2&check_in=2022-03-07&check_out=2022-03-13&federated_search_id=0050e33c-b0f4-4780-88e6-f783ce3799d9&source_impression_id=p3_1646099775_7D0zUa1WnEGDmY4x"
-                            target="blank" class="btn btn-dark">Go somewhere</a>
+                            target="blank" class="btn btn-dark">Visitar</a>
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                         <a href="https://www.airbnb.mx/rooms/19405410?adults=2&check_in=2022-03-07&check_out=2022-03-13&federated_search_id=233bf8e4-9ea2-441c-aa7d-c9700b3a858e&source_impression_id=p3_1646099850_HbBg7I9IaVcEfUkf"
-                            target="blank" class="btn btn-dark">Go somewhere</a>
+                            target="blank" class="btn btn-dark">Visitar</a>
                     </div>
                 </div>
             </div>
@@ -153,19 +153,31 @@
     </section>
     <br>
     <br>
-    <section class="container m-0 p-0" id="ubication">
-        <div class="row m-0 p-0">
-          <div class="col-12 m-0 p-0">
-            <a name="ubicacion"></a>
-            <h3>Ubicacion con Google Maps</h3>
-            <div id="mapa">
+    <section class="container-fluid" id="ubication">
+        <div class="row">
+            <div class="col-12">
+                <h3>Ubicacion con Google Maps</h3>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-7">
+            <div data-aos="fade-right" id="mapa">
                 
             </div>
           </div>
+          <div class="col-5">
+            <div data-aos="fade-left" class="card">
+                <img src="/practica1/assets/img/img-map.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Manhattan, New York</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-dark">Visitar</a>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
-    <br>
-    <br>
+    </section>
     <section id="footer-home" class="container-fluid bg-dark">
         <div class="row">
             <div class="col-12">
@@ -187,12 +199,15 @@
     <script>
         AOS.init();
     </script>
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=iniciaMapa" async defer></script>
+   <script async
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh0jVdLnt3BvZZtXMxjMOXnWLGRS3XMv4&callback=iniciaMapa">
+</script>
     <script>
+        // Coordenadas Manhattan:  40.76593140546304, -73.96751680488012
         function iniciaMapa(){
           var coordenadas = {
-            lat: 21.152854975645525,
-            lng: -101.71073064407186,
+            lat: 40.76593140546304,
+            lng: -73.96751680488012,
           }
   
           var map= new google.maps.Map(
