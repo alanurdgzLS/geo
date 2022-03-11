@@ -35,9 +35,8 @@
                 navigator.geolocation.getCurrentPosition(muestraPosicion);
             }
         }
-
         function muestraPosicion(posicion) {
-            var coordenadas = posicion.coord.latitude + "," + posicion.coord.longitude
+            var coordenadas = posicion.coords.latitude + "," + posicion.coords.longitude
             var imagenmapa = document.getElementById("imagenmapa")
             imagenmapa.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + coordenadas + "&zoom=18&size=800x800&key=AIzaSyCh0jVdLnt3BvZZtXMxjMOXnWLGRS3XMv4"
         }
