@@ -28,18 +28,18 @@
                 datos.forEach(registro => {
                     
                     let renglon = document.createElement("div");
-                    renglon.className = "row border bg-light";
+                    renglon.className = "row border border-warning";
                     paises.appendChild(renglon);
 
                     let columna = document.createElement("div");
-                    renglon.className = "col-12";
-                    paises.appendChild(columna);
+                    columna.className = "col-12";
+                    renglon.appendChild(columna);
                     
                     let nombre = document.createElement("p");
                     nombre.textContent = contador + ") " + registro.CountryName
                     paises.appendChild(nombre)
                     contador++
-                    
+
                 });
             });
         });
