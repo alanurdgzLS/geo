@@ -13,11 +13,7 @@
 
 
     <div class="container" id="paises">
-        <div class="row">
-            <div class="col-12">
-
-            </div>
-        </div>
+        
     </div>
 
 
@@ -25,13 +21,24 @@
 
         var paises = document.getElementById("paises");
 
-        fetch("https://sistemasgeo.com/2022/fetch/paises.json").then(function(response){
+        fetch("paises.json").then(function(response){
             console.log(response)
             response.json().then(function(datos){
+                let contador = 1;
                 datos.forEach(registro => {
+                    
+                    let renglon = document.createElement("div");
+                    renglon.className = "row border bg-light";
+                    paises.appendChild(renglon);
+
+                    let columna = document.createElement("div");
+                    renglon.className = "col-12";
+                    paises.appendChild(columna);
+                    
                     let nombre = document.createElement("p");
-                    nombre.textContent = "Pais " + registro.countryName
+                    nombre.textContent = contador + ") " + registro.CountryName
                     paises.appendChild(nombre)
+                    contador++
                 });
             });
         });
