@@ -19,9 +19,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div id="map"></div>
-    </div>
+    <div id="map"></div>
     
 
 
@@ -45,10 +43,10 @@
                             content: informacion
                         });
                         let marker = new google.maps.Marker({
-                            map : map,
-                            position : new google.maps.LatLng(marcador, marcador.CapitalLatitude, marcador.CapitalLongitude),
-                            title: marcador.CountryName
-                        });
+                                        map: map,
+                                        position: new google.maps.LatLng(marcador.CapitalLatitude, marcador.CapitalLongitude),
+                                        title: marcador.CountryName + registro.cases
+                                    });
                         marker.addListener('click', function(){
                             infowindow.open(map, marker);
                         })
