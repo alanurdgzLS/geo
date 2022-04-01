@@ -1,0 +1,16 @@
+
+#titulo {
+    background-color: #3D3D3D;
+    padding: 15px;
+    margin-bottom: 2rem;
+}
+
+#titulo h2 {
+    color: white;
+}
+
+.card {
+    -webkit-box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.75);
+}
